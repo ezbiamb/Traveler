@@ -10,5 +10,6 @@ using namespace std;
 
 int main() {
     cout << "Hello world and other worlds!" << endl;
+    cout << "Koham mojom Medzie!!!"
     return 0;
 }
