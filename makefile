@@ -7,19 +7,27 @@ LDFLAGS :=
 
 #worked: g++ EchoTest.cpp -o test /usr/lib/libgtest.a /usr/lib/libgtest_main.a -lpthread
 
+SOURCEDIR = src
+BUILDDIR = build
+
 # File names
 EXEC = run
-SOURCES = $(wildcard *.cpp)
-OBJECTS = $(SOURCES:.cpp=.o)
+SOURCES = $(wildcard src/*.cpp)
+OBJECTS = $(patsubst $(SOURCEDIR)/%.cpp,$(BUILDDIR)/%.o,$(SOURCES))
 
 # Main target
-$(EXEC): $(OBJECTS)
-	$(CC) $(OBJECTS) -o $(EXEC) $(LDFLAGS)
+$(BUILDDIR)/$(EXEC): $(OBJECTS)
+	$(CC) $^ -o $@ $(LDFLAGS)
 
 # To obtain object files
-%.o: %.cpp
+$(OBJECTS): $(BUILDDIR)/%.o : $(SOURCEDIR)/%.cpp
 	$(CC) -c $(CC_FLAGS) $< -o $@
+
+dir: 
+	mkdir -p $(BUILDDIR)
+
+all: dir $(BUILDDIR)/$(EXEC)
 
 # To remove generated files
 clean:
-	rm -f $(EXEC) $(OBJECTS)
+	rm -f $(BUILDDIR)/$(EXEC) $(OBJECTS)
