@@ -13,7 +13,7 @@ using namespace std;
 
 int main() {
     cout << "Hello world and other worlds!" << endl;
-    cout << "Kocham mojom Merdziem!!!!!!" << endl;
+    cout << "Kocham mojom Merdziem!!!!!!!" << endl;
     cout << "If I get it, I'm on auto testing!"
     Echo A(1);
     cout << A.echo() << endl;
