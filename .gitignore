@@ -1,5 +1,4 @@
-/build/
 .cproject
 .project
 /.settings/
-!.gitignore
+!/build/.gitignore
