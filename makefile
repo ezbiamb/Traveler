@@ -23,10 +23,10 @@ $(BUILDDIR)/$(EXEC): $(OBJECTS)
 $(OBJECTS): $(BUILDDIR)/%.o : $(SOURCEDIR)/%.cpp
 	$(CC) -c $(CC_FLAGS) $< -o $@
 
-dir: 
+$(BUILDDIR): 
 	mkdir -p $(BUILDDIR)
 
-all: dir $(BUILDDIR)/$(EXEC)
+all: $(BUILDDIR) $(BUILDDIR)/$(EXEC)
 
 # To remove generated files
 clean:
