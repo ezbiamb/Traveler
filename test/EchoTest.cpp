@@ -5,8 +5,8 @@
  *      Author: zybdzghfryd
  */
 
-#include "Echo.hpp"
-//#include <gtest/gtest.h>
+#include "../src/Echo.hpp"
+#include <gtest/gtest.h>
 
 /*
 TEST(EchoTest, Basic) {
@@ -15,8 +15,5 @@ TEST(EchoTest, Basic) {
 	ASSERT_EQ(example, A.echo());
 }
 
-int main(int argc, char **argv) {
-    testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}
 */
+
