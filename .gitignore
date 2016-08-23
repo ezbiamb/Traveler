@@ -3,3 +3,9 @@
 .project
 /.settings/
 /Debug/
+
+#CMake artfacts
+*.cmake
+Makefile
+CMakeCache.txt
+CMakeFiles
