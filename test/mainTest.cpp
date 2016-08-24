@@ -1,5 +1,5 @@
 #include "include/echo/echoTest.cpp"
-#include <gtest/gtest.h>
+#include "gtest/gtest.h"
 
 namespace {
 
