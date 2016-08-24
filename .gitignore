@@ -4,6 +4,10 @@
 /.settings/
 /Debug/
 
+#artifacts
+lib/*
+bin/*
+
 #CMake artfacts
 *.cmake
 Makefile

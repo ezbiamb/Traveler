@@ -1,11 +1,12 @@
 cmake_minimum_required(VERSION 2.8)
 project(traveler)
-set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/bin)
-set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
-set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
-#add_subdirectory("${PROJECT_SOURCE_DIR}")
-add_subdirectory("src")
-add_subdirectory("lib")
+set(BINARY_DIR ${PROJECT_SOURCE_DIR}/bin)
+set(EXECUTABLE_OUTPUT_PATH ${BINARY_DIR})
 
+set(LIBRARY_DIR ${PROJECT_SOURCE_DIR}/lib)
+set(LIBRARY_OUTPUT_PATH ${LIBRARY_DIR})
 
+include_directories(include)
+add_subdirectory(src)
+add_subdirectory(include)
