@@ -5,6 +5,8 @@
 #artifacts
 lib/*
 bin/*
+#but: preserve gtest libraried
+!lib/*gtest*
 
 #CMake artfacts
 *.cmake
