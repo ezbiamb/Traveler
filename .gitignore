@@ -1,8 +1,6 @@
-/builddir/
 .cproject
 .project
 /.settings/
-/Debug/
 
 #artifacts
 lib/*
