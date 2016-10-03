@@ -5,3 +5,12 @@
  *      Author: zybdzghfryd
  */
 
+#include "echo.hpp"
+
+Echo::Echo(int text_){
+	text = text_+1;
+}
+
+int Echo::echo(){
+	return text;
+}

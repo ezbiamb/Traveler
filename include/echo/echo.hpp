@@ -15,8 +15,8 @@ using namespace std;
 class Echo {
 	int text;
 public:
-	Echo(int text_) {text = text_+1;};
-	int echo(){ return text;}
+	Echo(int text_);
+	int echo();
 };
 
 

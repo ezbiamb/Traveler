@@ -7,7 +7,9 @@
 
 #include <iostream>
 
-#include "echo/echo.hpp"
+#include "echo.hpp"
+//#include "Map/Map.h"
+#include "Person.h"
 
 using namespace std;
 
@@ -17,5 +19,6 @@ int main() {
     cout << "If I get it, I'm on auto testing!" << endl;
     Echo A(1);
     cout << A.echo() << endl;
+    Person p;
     return 0;
 }

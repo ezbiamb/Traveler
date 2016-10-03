@@ -7,7 +7,6 @@ set(EXECUTABLE_OUTPUT_PATH ${BINARY_DIR})
 set(LIBRARY_DIR ${PROJECT_SOURCE_DIR}/lib)
 set(LIBRARY_OUTPUT_PATH ${LIBRARY_DIR})
 
-include_directories(include)
 add_subdirectory(src)
 add_subdirectory(include)
 add_subdirectory(test)

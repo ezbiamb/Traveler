@@ -5,7 +5,7 @@
  *      Author: zybdzghfryd
  */
 
-#include "echo/echo.hpp"
+#include "echo.hpp"
 #include "gtest/gtest.h"
 
 /*

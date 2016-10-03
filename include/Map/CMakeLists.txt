@@ -1,0 +1,5 @@
+add_library(Map STATIC "Map.cpp" Map.h)
+target_link_libraries(Map LINK_PUBLIC Connection)
+target_link_libraries(Map LINK_PUBLIC Place)
+target_link_libraries(Map LINK_PUBLIC Travel)
+target_include_directories(Map PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

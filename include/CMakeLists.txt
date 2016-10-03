@@ -1,1 +1,8 @@
 add_subdirectory(echo)
+add_subdirectory(Map)
+add_subdirectory(Person)
+add_subdirectory(Place)
+add_subdirectory(Section)
+add_subdirectory(Travel)
+add_subdirectory(Vehicle)
+#include_directories(Travel)
