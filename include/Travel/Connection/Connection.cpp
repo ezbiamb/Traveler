@@ -7,7 +7,7 @@
 
 #include "Connection.h"
 
-Connection::Connection() {
+Connection::Connection(Section section) : _section(section)  {
 	// TODO Auto-generated constructor stub
 
 }

@@ -12,12 +12,16 @@
 #ifndef INCLUDE_SECTION_SECTION_H_
 #define INCLUDE_SECTION_SECTION_H_
 
+#include "PlaceId.h"
+
 class Section {
 public:
-	Section();
+	Section(PlaceId ends[2], int distance, bool bidirectional = true);
 	virtual ~Section();
 private:
-	float distance;
+	float _distance;
+	bool _bidirectional;
+	PlaceId _ends[2];
 };
 
 #endif /* INCLUDE_SECTION_SECTION_H_ */

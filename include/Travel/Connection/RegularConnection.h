@@ -13,13 +13,13 @@
 
 class RegularConnection {
 public:
-	RegularConnection();
+	RegularConnection(Section section);
 	virtual ~RegularConnection();
 	Connection FindNextConnection(time_t,const Person&);
 private:
-	Section section;
-	Vehicle vehicle;
-	float cost;
+	Section _section;
+	Vehicle _vehicle;
+	float _cost;
 };
 
 #endif /* INCLUDE_TRAVEL_CONNECTION_REGULARCONNECTION_H_ */

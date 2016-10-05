@@ -15,9 +15,9 @@ public:
 	Car();
 	virtual ~Car();
 private:
-	float speed;
-	float cost_per_kilometer;
-	float cost_per_day; //0 for private car
+	float _speed;
+	float _cost_per_kilometer;
+	float _cost_per_day; //0 for private car
 };
 
 #endif /* INCLUDE_VEHICLE_CAR_CAR_H_ */

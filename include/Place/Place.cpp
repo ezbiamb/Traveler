@@ -7,7 +7,12 @@
 
 #include "Place.h"
 
-Place::Place() {
+Place::Place(string name) : PlaceId(name) {
+	// TODO Auto-generated constructor stub
+
+}
+
+Place::Place(string name, float latitude, float longitude) : PlaceId(name), _coordinates {latitude, longitude} {
 	// TODO Auto-generated constructor stub
 
 }

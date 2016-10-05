@@ -12,7 +12,7 @@
 
 class Road : public Section{
 public:
-	Road();
+	Road(Section section);
 	virtual ~Road();
 };
 

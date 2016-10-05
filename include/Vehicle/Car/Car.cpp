@@ -7,7 +7,7 @@
 
 #include "Car.h"
 
-Car::Car() {
+Car::Car() : _speed(0), _cost_per_day(0), _cost_per_kilometer(0) {
 	// TODO Auto-generated constructor stub
 
 }

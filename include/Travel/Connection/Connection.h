@@ -21,12 +21,12 @@ using namespace std;
 
 class Connection {
 public:
-	Connection();
+	Connection(Section section);
 	virtual ~Connection();
 private:
-	Section section;
-	Vehicle* vehicle; //Connection does not own a vehicle, but an existing uses one
-	float cost;
+	Section _section;
+	Vehicle* _vehicle; //Connection does not own a vehicle, but an existing uses one
+	float _cost;
 	time_t _start_date, _end_date;
 	Person _traveler_initial_state, _traveler_final_state; //describes state of the Person before and after using the connection
 };

@@ -21,13 +21,16 @@ class Map {
 public:
 	Map();
 	virtual ~Map();
-	Travel FindOptimalTravel(Place origin, Place destination,
+	void AddPlace(PlaceId);
+	void AddPlace(Place);
+	void AddSection(Section);
+	Travel FindOptimalTravel(string origin, string destination,
 								float budget,
 								time_t start_date, time_t end_date); // add parameter what to minimize
 	//FindOptimalConnection could be done in reverse manner to find how to get back
 	vector<Travel> FindOptimalVacation(vector<Place> places,float budget, time_t start_date, time_t end_date);
 private:
-	map<Place,vector<Section> > graph;
+	map<PlaceId,pair<Place,vector<Section> > > graph;
 };
 
 #endif /* INCLUDE_MAP_MAP_H_ */

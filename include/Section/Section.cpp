@@ -7,8 +7,11 @@
 
 #include "Section.h"
 
-Section::Section() {
-	distance = 0;
+Section::Section(PlaceId ends[2],
+				int distance,
+				bool bidirectional) : _ends {ends[0], ends[1]},
+									 	 	 _distance(distance),
+											 _bidirectional(bidirectional) {
 	// TODO Auto-generated constructor stub
 
 }
