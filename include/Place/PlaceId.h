@@ -16,6 +16,7 @@ class PlaceId {
 public:
 	PlaceId(string name);
 	virtual ~PlaceId();
+	bool operator<(const PlaceId& ) const;
 protected:
 	string _name;
 };

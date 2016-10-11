@@ -1,4 +1,5 @@
-add_executable(travelerTest mainTest.cpp)
+add_executable(travelerTest mainTest.cpp include/Map/MapTest.cpp)
 target_link_libraries(travelerTest LINK_PUBLIC echo)
 target_link_libraries(travelerTest LINK_PUBLIC gtest)
 target_link_libraries(travelerTest LINK_PUBLIC gtest_main)
+target_link_libraries(travelerTest LINK_PUBLIC Map)

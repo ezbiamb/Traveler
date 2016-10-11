@@ -7,7 +7,8 @@
 
 #include "Connection.h"
 
-Connection::Connection(Section section) : _section(section)  {
+Connection::Connection(Section section) : _section(section), _vehicle(NULL),_cost(0),
+										  _start_date(0), _end_date(0){
 	// TODO Auto-generated constructor stub
 
 }

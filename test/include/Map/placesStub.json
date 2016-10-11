@@ -1,0 +1,12 @@
+{
+"Places":{
+  "Gdansk": {
+    "latitude": 54,
+    "longitude": 18
+  },
+  "Krakow": {
+    "latitude": 50,
+    "longitude": 20
+  }
+}
+}

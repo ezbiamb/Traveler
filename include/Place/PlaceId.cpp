@@ -14,3 +14,6 @@ PlaceId::~PlaceId() {
 	// TODO Auto-generated destructor stub
 }
 
+bool PlaceId::operator<(const PlaceId& other) const{
+	return _name < other._name;
+}

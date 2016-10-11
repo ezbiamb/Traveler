@@ -7,7 +7,7 @@
 
 #include "RegularConnection.h"
 
-RegularConnection::RegularConnection(Section section) : _section(section) {
+RegularConnection::RegularConnection(Section section) : _section(section), _cost(0) {
 	// TODO Auto-generated constructor stub
 
 }

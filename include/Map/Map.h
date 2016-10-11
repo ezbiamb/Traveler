@@ -14,6 +14,8 @@
 
 #include <map>
 #include <ctime>
+#include <boost/property_tree/ptree.hpp>
+#include <boost/property_tree/json_parser.hpp>
 
 using namespace std;
 
@@ -24,6 +26,8 @@ public:
 	void AddPlace(PlaceId);
 	void AddPlace(Place);
 	void AddSection(Section);
+	void LoadPlaces(string filePath);
+	size_t GetNumberOfPlaces();
 	Travel FindOptimalTravel(string origin, string destination,
 								float budget,
 								time_t start_date, time_t end_date); // add parameter what to minimize
